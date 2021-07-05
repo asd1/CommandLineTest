@@ -16,6 +16,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging.EventLog;
 using Microsoft.Extensions.DependencyInjection;
 
+// Just a test program
 namespace CommandLineTest
 {
     class Program
@@ -34,7 +35,7 @@ namespace CommandLineTest
             
         //    return retcode;
         //}
-
+          
         static async Task<int> Main(string[] args)
         {
             return await Parser.Default.ParseArguments<Options>(args)
